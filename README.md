@@ -1,24 +1,58 @@
-# README
+# Rails Blog App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This a Microverse project that uses Rails and SQL to create a Blog app with users and posts.
 
-Things you may want to cover:
 
-* Ruby version
+## Built With
 
-* System dependencies
+- Ruby on Rails
+- SQL
+## Getting Started
 
-* Configuration
+### Installation
 
-* Database creation
+1. Clone the repo
 
-* Database initialization
+   ```sh
+   git@github.com:smunozmo/rails-blog-app.git
+   ```
 
-* How to run the test suite
+### Usage
 
-* Services (job queues, cache servers, search engines, etc.)
+1. Execute program
 
-* Deployment instructions
+   ```sh
+   rails s
+   ```
 
-* ...
+### Test
+
+1. For testing the classes run:
+
+   ```sh
+   bundle exec rspec  
+   ```
+
+## Author
+
+
+👤 **Sebastián Muñoz**
+
+- GitHub: [@smunozmo](https://github.com/smunozmo)
+- Twitter: [@smunozmo](https://twitter.com/smunozmo)
+- Linkedin: [Sebastián Muñoz](https://www.linkedin.com/in/smunozmo/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/smunozmo/rails-blog-app/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt) licensed.
+
