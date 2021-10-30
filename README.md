@@ -5,8 +5,9 @@ This a Microverse project that uses Rails and SQL to create a Blog app with user
 
 ## Built With
 
-- Ruby on Rails
-- SQL
+- Ruby 2.3.7
+- Rails 5.2.6
+- PostgresSQL 1.2.3, 0.21.0
 ## Getting Started
 
 ### Installation
@@ -19,15 +20,29 @@ This a Microverse project that uses Rails and SQL to create a Blog app with user
 
 ### Usage
 
-1. Execute program
+
+
+1. Run the app
 
    ```sh
+   bundle install
+
+   gem install rails
+
+   rake db:create
+
+   rake db:migrate
+
    rails s
    ```
 
-### Test
+Go to the official documentation for more information about the setup steps for your OS here:
 
-1. For testing the classes run:
+https://gorails.com/setup
+
+### Testing
+
+1. Testing
 
    ```sh
    bundle exec rspec  
