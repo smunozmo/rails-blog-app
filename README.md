@@ -5,8 +5,9 @@ This a Microverse project that uses Rails and SQL to create a Blog app with user
 
 ## Built With
 
-- Ruby on Rails
-- SQL
+- Ruby 2.3.7
+- Rails 5.2.6
+- PostgresSQL 1.2.3, 0.21.0
 ## Getting Started
 
 ### Installation
