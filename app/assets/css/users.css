@@ -8,13 +8,21 @@
     padding: 0;
   }
 
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+/* Users index */
+
 .users_index_user_li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     height: 12vw;
     margin: 3vw;
-    border: lightgray 1px solid;
+    border: gray 1px solid;
 }
 
 .users_index_user_photo {
@@ -24,7 +32,6 @@
     margin: 3vw auto;
 }
 
-
 .users_index_user_info {
     text-align: left;
     min-width: 70%;
@@ -32,7 +39,196 @@
 }
 
 .users_index_user_posts {
-    font-size: 1vw;
+    font-size: 1.5vw;
     margin-top: 3vw;
     text-align: right;
+}
+
+/* User details  */
+
+.user_show_user_info_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 12vw;
+    margin: 3vw;
+    border: gray 1px solid;
+}
+
+.user_show_user_photo {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 20%;
+    margin: 3vw auto;
+}
+
+.user_show_user_detail_wrapper {
+    text-align: left;
+    min-width: 70%;
+    margin: 2vw auto;
+}
+
+.user_show_user_post_counter {
+    font-size: 1.5vw;
+    margin-top: 3vw;
+    text-align: right;
+}
+
+.user_show_user_bio_wrapper {
+    min-height: 12vw;
+    margin: 3vw;
+    border: rgb(90, 80, 80) 1px solid;
+}
+
+.user_show_user_bio_tag {
+    margin: 2vw;
+}
+
+.user_show_user_bio_detail {
+    margin: 2vw;
+    font-size: 2vw;
+}
+
+.user_show_user_post {
+    min-height: 12vw;
+    margin: 3vw;
+    border: rgb(90, 80, 80) 1px solid;
+}
+
+.user_show_user_post_title {
+    margin: 2vw;
+}
+
+.user_show_user_post_text {
+    margin: 2vw;
+    font-size: 2vw;
+}
+
+.user_show_user_post_comments {
+    font-size: 1.5vw;
+    margin: 3vw;
+    text-align: right;
+}
+
+.user_show_user_button {
+    text-align: center;
+}
+
+.user_show_see_all_post_link {
+    border: grey 2px solid;
+    padding: 1vw 1.5vw;
+    font-size: 2vw;    
+    cursor: pointer;
+    box-shadow: 0 0.2vw 1vw #d3d3d3;
+    
+}
+
+/* Post details  */
+
+.post_show_post_wrapper {
+    min-height: 12vw;
+    margin: 3vw;
+    border: rgb(90, 80, 80) 1px solid;
+}
+
+.post_show_post_content_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3vw;
+}
+
+.post_show_post_comment_counter {
+    font-size: 1.5vw;
+}
+
+.post_show_post_text {
+    margin: 2vw;
+    font-size: 2vw;
+}
+
+.post_show_post_comments_wrapper {
+    min-height: 12vw;
+    margin: 3vw;
+    border: rgb(90, 80, 80) 1px solid;
+}
+
+.post_show_post_comment {
+    margin: 2vw;
+    font-size: 2vw;
+}
+
+/* Posts list */
+
+.post_index_user_detail_wraper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 12vw;
+    margin: 3vw;
+    border: grey 1px solid;
+}
+
+.post_index_user_img {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 20%;
+    margin: 3vw;
+}
+
+.post_index_user_name_tag {
+    text-align: left;
+    min-width: 60vw;
+    margin: 2vw auto;
+}
+
+.post_index_user_posts_count {
+    font-size: 1.5vw;
+    margin: 3vw;
+    text-align: right;
+}
+
+.post_index_posts_container {
+    min-height: 30vw;
+}
+
+.post_index_header_area {
+    margin: 3vw 3vw 0.5vw 3vw;
+    border: gray 1px solid;
+}
+
+.post_index_post_title {
+    margin: 3vw;
+}
+
+.post_index_post_text {
+    margin: 3vw;
+    font-size: 2vw;
+}
+
+.post_index_comments_and_likes_counter {
+    font-size: 1.5vw;
+    margin: 0 3vw 1vw 3vw;
+    text-align: right;
+}
+
+.post_index_comments_list {
+    /* height: 12vw; */
+    margin: 0 3vw 3vw 3vw;
+    border: gray 1px solid;
+}
+
+.post_index_comments_text {
+    margin: 3vw;
+    font-size: 2vw;
+}
+
+.post_index_pag_btn {
+    border: grey 2px solid;
+    padding: 1vw 1.5vw;
+    font-size: 2vw;    
+    cursor: pointer;
+    box-shadow: 0 0.2vw 1vw #d3d3d3;
 }

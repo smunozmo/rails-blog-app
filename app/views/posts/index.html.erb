@@ -26,5 +26,7 @@
       </li>
     <% end %>
   </ul>
-  <button class='post_index_pag_btn'>Pagination</button>
+  <div class='user_show_user_button'>
+    <%= link_to "Pagination", user_posts_path(user_id: @user), class: 'post_index_pag_btn' %>
+  </div>
 </div>

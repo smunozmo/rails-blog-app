@@ -21,5 +21,7 @@
       </li>
     <% end %>
   </ul>
-  <%= link_to "See all posts", user_posts_path(user_id: @user), class: 'user_show_see_all_post_link' %>
+  <div class='user_show_user_button'>
+    <%= link_to "See all posts", user_posts_path(user_id: @user), class: 'user_show_see_all_post_link' %>
+  </div>
 </section>
