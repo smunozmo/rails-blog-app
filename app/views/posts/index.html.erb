@@ -1,2 +1,30 @@
-<h1>Posts List</h1>
-<p>Display all posts</p>
+<div class='card'>
+  <div class='card-body'>
+    <div class='p1'>photo</div>
+    <div class='p1'>
+      <h1 class='p1'><%= @user.name %></h2>
+      <h2 class='p1'>Number of posts: <%= @user.posts_counter %></h4>
+    </div>
+  </div>
+  <ul class='p1'>
+    <% @posts.each do |post| %>
+      <li class='p1'>
+        <div class='p1'>
+            <h1 class='p1'><%= link_to post.title, user_post_path(user_id: @user, id: post.id), class: 'post_index_title_link' %></h1>
+            <p class='p1'><%= post.text %></p>
+            <h2 class='p1'>Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></h2>
+        </div>
+        <ul class='p1'>
+          <% @comments.each do |comment| %>
+            <% if comment.post_id == post.id %>
+              <li class='p1'>
+                <%= @userlist.find(comment.author_id).name %>: <%= comment.text %>
+              </li>
+            <% end %>
+          <% end %>
+        </ul>
+      </li>
+    <% end %>
+  </ul>
+  <button class='p1'>Pagination</button>
+</div>
