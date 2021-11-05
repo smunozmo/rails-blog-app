@@ -68,5 +68,5 @@ end
 
 gem 'rails-controller-testing', '~> 0.0.3'
 
-#webpacker
+# webpacker
 gem 'webpacker', '~> 4.0'
