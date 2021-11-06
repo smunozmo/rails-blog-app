@@ -274,3 +274,11 @@ a {
     padding: 0 1vw;
     margin: 0 2vw 0 0;
 }
+
+.add_comment_head_title {
+    margin-bottom: 3vw;
+}
+
+.add_comment_main_container {
+    margin: 3vw;
+}
