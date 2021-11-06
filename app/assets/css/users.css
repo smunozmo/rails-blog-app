@@ -234,51 +234,65 @@ a {
 /* Forms  */
 
 .post_new_main_container {
-    margin: 3vw;
+  margin: 3vw;
 }
 
 .post_new_add_post_indicator {
-    margin-bottom: 3vw;
+  margin-bottom: 3vw;
 }
 
 .post_new_title_input {
-    width: 100%;
-    margin: 1vw 0 3vw 0;
+  width: 100%;
+  margin: 1vw 0 3vw 0;
 }
 
 .post_new_text_input {
-    width: 100%;
-    min-height: 12vw;
-    margin: 1vw 0 3vw 0;
+  width: 100%;
+  min-height: 12vw;
+  margin: 1vw 0 3vw 0;
 }
 
 .post_new_submit_btn {
-    font-size: 2vw;
-    padding: 0 1vw;
+  font-size: 2vw;
+  padding: 0 1vw;
 }
 
 .post_show_btns {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 3vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3vw;
 }
 
 .post_show_add_comment_btn {
-    font-size: 2vw;
-    margin-top: 1vw;
+  font-size: 2vw;
+  margin-top: 1vw;
 }
 
 .post_show_add_like_btn {
-    font-size: 2vw;
-    padding: 0 1vw;
-    margin: 0 2vw 0 0;
+  font-size: 2vw;
+  padding: 0 1vw;
+  margin: 0 2vw 0 0;
 }
 
 .add_comment_head_title {
-    margin-bottom: 3vw;
+  margin-bottom: 3vw;
 }
 
 .add_comment_main_container {
-    margin: 3vw;
+  margin: 3vw;
+}
+
+.add_comment_form_btn {
+  font-size: 2vw;
+  padding: 0 1vw;
+}
+
+.add_comment_form_label {
+  margin: 2vw 0;
+}
+
+.add_comment_form_input {
+  width: 100%;
+  min-height: 12vw;
 }
