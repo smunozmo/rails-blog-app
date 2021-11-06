@@ -9,10 +9,10 @@ RSpec.describe Post, type: :model do
                         text: 'My text',
                         comments_counter: 1, likes_counter: 0)
     @new_post = Post.create(author_id: @user.id, title: 'Foo Title',
-                        text: 'My text',
-                        comments_counter: 1, likes_counter: 0)
-    @comment = Comment.create(author_id: @user.id, post_id: @post.id, text: 'First Comment')
-    @new_comment = Comment.create(author_id: @user.id, post_id: @post.id, text: 'Second Comment')
+                            text: 'My text',
+                            comments_counter: 1, likes_counter: 0)
+    @comment = Comment.create(author_id: @user.id, post_id: @post.id, text: 'Comment')
+    @new_comment = Comment.create(author_id: @user.id, post_id: @post.id, text: 'Comment')
   end
 
   it 'name has a valid length' do
