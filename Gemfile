@@ -73,3 +73,6 @@ gem 'webpacker', '~> 4.0'
 
 # devise
 gem 'devise'
+
+#cancancan
+gem 'cancancan'
