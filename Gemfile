@@ -71,5 +71,5 @@ gem 'rails-controller-testing', '~> 0.0.3'
 # webpacker
 gem 'webpacker', '~> 4.0'
 
-#devise
+# devise
 gem 'devise'
