@@ -1,24 +1,24 @@
 require 'rails_helper'
 
 RSpec.describe 'in a post page', js: true, type: :system do
-    before(:all) do
-        @first_user = User.create(name: 'Foo', photo: 'photo',
-                                  bio: 'Awesome bio',
-                                  posts_counter: 0, email: 'user@mail.com', password: '111111', confirmed_at: Time.now)
-        @second_user = User.create(name: 'Bar', photo: 'photo',
-                                   bio: 'Awesome bio',
-                                   posts_counter: 0, email: 'test@mail.com', password: '111111', confirmed_at: Time.now)
-        @first_post = Post.create(title: 'Title 1', text: 'Lorem ipsum',
-                                  author_id: @first_user.id, comments_counter: 0, likes_counter: 0)
-        @second_post = Post.create(title: 'Title 2', text: 'Lorem ipsum',
-                                   author_id: @first_user.id, comments_counter: 0, likes_counter: 0)
-        @third_post = Post.create(title: 'Title 3', text: 'Lorem ipsum',
-                                  author_id: @first_user.id, comments_counter: 0, likes_counter: 0)
-        @fourth_post = Post.create(title: 'Title 4', text: 'Lorem ipsum',
-                                   author_id: @first_user.id, comments_counter: 0, likes_counter: 0)
-        Comment.create(text: 'Wow comment', author_id: @second_user.id, post_id: @fourth_post.id)
-        Comment.create(text: 'Best comment', author_id: @first_user.id, post_id: @fourth_post.id)
-      end
+  before(:all) do
+    @first_user = User.create(name: 'Foo', photo: 'photo',
+                              bio: 'Awesome bio',
+                              posts_counter: 0, email: 'user@mail.com', password: '111111', confirmed_at: Time.now)
+    @second_user = User.create(name: 'Bar', photo: 'photo',
+                               bio: 'Awesome bio',
+                               posts_counter: 0, email: 'test@mail.com', password: '111111', confirmed_at: Time.now)
+    @first_post = Post.create(title: 'Title 1', text: 'Lorem ipsum',
+                              author_id: @first_user.id, comments_counter: 0, likes_counter: 0)
+    @second_post = Post.create(title: 'Title 2', text: 'Lorem ipsum',
+                               author_id: @first_user.id, comments_counter: 0, likes_counter: 0)
+    @third_post = Post.create(title: 'Title 3', text: 'Lorem ipsum',
+                              author_id: @first_user.id, comments_counter: 0, likes_counter: 0)
+    @fourth_post = Post.create(title: 'Title 4', text: 'Lorem ipsum',
+                               author_id: @first_user.id, comments_counter: 0, likes_counter: 0)
+    Comment.create(text: 'Wow comment', author_id: @second_user.id, post_id: @fourth_post.id)
+    Comment.create(text: 'Best comment', author_id: @first_user.id, post_id: @fourth_post.id)
+  end
 
   describe 'I can see' do
     it 'the post\'s title' do
